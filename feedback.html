@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的笔记 - 反馈页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="twikoo.css">
+</head>
+<body>
+    <header>
+        <h1>反馈</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="notes.html">内容页</a></li>
+                <li><a href="about.html">信息页</a></li>
+                <li><a href="feedback.html">反馈页</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div id="tcomment"></div>
+    <script src="https://unpkg.com/twikoo@1.6.40/dist/twikoo.nocss.js"></script>
+    <script>
+twikoo.init({
+  envId: 'https://twikoo.csy2022.top', 
+  el: '#tcomment', // 容器元素
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+    </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 我的笔记</p>
+    </footer>
+</body>
+</html>
