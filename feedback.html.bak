@@ -21,7 +21,6 @@
         </nav>
     </header>
     <main>
-    <section>
     <div id="tcomment">
     <script>
 twikoo.init({
@@ -32,7 +31,6 @@ twikoo.init({
 })
     </script>
     </div>
-    </section>
     </main>
     <footer>
         <p>&copy; 2024 我的笔记</p>
